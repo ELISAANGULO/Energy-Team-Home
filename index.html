@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<title>ENERGY TEAM | "START ACTING,STOP TALKING"</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="icon" href="imagenes/energy.ico">
+<style>
+body,h1,h3 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: rgb(15, 15, 15);
+  line-height: 1.8;
+}
+
+body,h2,h4,h5,h6 {font-family: "Lato", sans-serif;
+text-align: justify;}
+body, html {
+  height: 100%;
+  color: rgb(15, 15, 15);
+  line-height: 1.8;
+
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('imagenes/oil.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+    
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-Home/" class="w3-bar-item w3-button">HOME</a>
+    <a href="https://energy-team-sinergia2020.github.io/ENERGY-TEAM-YNC3/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> YNC</a>
+    <a href="https://energy-team-sinergia2020.github.io/ENERGY-TEAM-APP/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paper-plane"></i> </a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">ENERGY TEAM- APP <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="#" class="w3-bar-item w3-button">Energy App - Spanish</a>
+        <a href="#" class="w3-bar-item w3-button">Energy App - English</a>
+        
+      </div>
+    </div>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-team-papers/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TECHNICAL PAPERS</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-About-Us/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT US</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-About-Us/#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-Home/" class="w3-bar-item w3-button">HOME</a>
+    <a href="https://energy-team-sinergia2020.github.io/ENERGY-TEAM-YNC3/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> YNC</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">ENERGY TEAM- APP <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="#" class="w3-bar-item w3-button">Energy App - Spanish</a>
+        <a href="#" class="w3-bar-item w3-button">Energy App - English</a>
+        
+      </div>
+    </div>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-About-Us/" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-team-papers/" class="w3-bar-item w3-button" onclick="toggleFunction()">TECHNICAL PAPERS</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-About-Us/#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-animate-top">ENERGY<span class="w3-hide-small">TEAM</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" >
+      <div >
+        <div class= "w3-center w3-panel w3-topbar w3-bottombar w3-border-red  " >
+          <h3 class="animated infinite bounce delay-2s">ENERGY TEAM</h3>
+          <p class="w3-center"><em>"Start acting,stop talking"</em></p>
+        </div>
+     </div>
+  <div> 
+
+    <div class="w3-right w3-row">
+  
+      <video width="450" height="450" controls>
+          <source src="Videos/energy.mp4" type="video/mp4">
+          <source src="Videos/energy.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video> </div>
+
+        
+       
+   
+<div class=" w3-padding-48"></div>
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p><br>Energy Team, is a team that seeks to create solutions to problems in the oil industry by seeking solutions that include technological tools and knowledge in the oil and gas industry. </br>
+
+         <br> We are currently participating in the Sinergia 2020 competition, where we are working on the planning of a project for a non-conventional oil field in the Middle Magdalena Valley basin in Colombia.  </br></p>
+    </div>
+  </div>
+ 
+
+
+ </div>
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-48">
+      <span class="w3-xlarge w3-bottombar w3-border-red w3-padding-16">What We Offer!</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 w3-topbar w3-border-amber">
+      <img src="imagenes/1.jpg" alt="Plan" style="width:100%">
+      <h3>CREATIVITY</h3>
+     
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16 w3-topbar w3-border-amber">
+      <img src="imagenes/2.jpg" alt="Analyze" style="width:100%">
+      <h3>DATA ANALYSIS</h3>
+
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16 w3-topbar w3-border-amber">
+      <img src="imagenes/4.jpg" alt="Execute" style="width:100%">
+      <h3>EFFECTIVE SOLUTIONS</h3>
+
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16 w3-topbar w3-border-amber">
+      <img src="imagenes/3.jpg" alt="Desing" style="width:100%">
+      <h3>INNOVATION</h3>
+
+    </div>
+  </div>
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides" src="imagenes/energy.jpg" style="width:100%">
+    <img class="mySlides" src="imagenes/halliburton.jpg" style="width:100%">
+    <img class="mySlides" src="imagenes/spe.jpg" style="width:100%">
+  </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
+  
+
+
+<!-- Footer -->
+
+ <footer class="w3-center w3-black w3-padding-64 w3-opacity  w3-padding-large w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  
+  </div>
+  <p><a href="https://www.youtube.com/channel/UCYCd8VJ8LEYooT8N5Ppe4wQ" title="ENERGY TEAM" target="_blank" class="w3-hover-text-green">"Energy Team" <BR>CLIK</BR></a></p>
+ </footer>
+</div>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+</html>
